@@ -1,1 +1,3 @@
 <%= turbo_stream.append "memos", @memo %>
+
+<%= turbo_stream.update "flash", partial: "flash" %>

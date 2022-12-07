@@ -11,11 +11,6 @@ class MemosController < ApplicationController
   def show
   end
 
-  # GET /memos/new
-  def new
-    @memo = Memo.new
-  end
-
   # GET /memos/1/edit
   def edit
   end

@@ -4,6 +4,7 @@ class MemosController < ApplicationController
   # GET /memos
   def index
     @memos = Memo.all
+    @memo = Memo.new
   end
 
   # GET /memos/1

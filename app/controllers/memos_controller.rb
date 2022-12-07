@@ -20,7 +20,7 @@ class MemosController < ApplicationController
     @memo = Memo.new(memo_params)
 
     if @memo.save
-      redirect_to @memo, notice: "Memo was successfully created."
+      flash.now.notice = "メモを登録しました"
     else
       render :new, status: :unprocessable_entity
     end
